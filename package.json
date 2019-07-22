@@ -1,21 +1,59 @@
 {
-  "name": "my-razzle-app",
+  "name": "react-challenge",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "start": "razzle start",
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
-    "start:prod": "NODE_ENV=production node build/server.js"
+    "start:prod": "NODE_ENV=production node build/server.js",
+    "now-start": "yarn start:prod"
+  },
+  "jest": {
+    "setupFiles": [
+      "enzyme-react-16-adapter-setup"
+    ]
+  },
+  "now": {
+    "engines": {
+      "node": "8.14.0"
+    },
+    "env": {
+      "RAZZLE_CONSUMER_KEY": "@razzle-consumer-key",
+      "RAZZLE_COUNTRY_KEY": "@razzle-country-key"
+    },
+    "type": "npm"
   },
   "dependencies": {
     "@material-ui/core": "^4.2.0",
+    "@material-ui/icons": "^4.2.1",
+    "axios": "^0.19.0",
+    "clsx": "^1.0.4",
     "express": "^4.17.1",
+    "offline-plugin": "^5.0.7",
     "razzle": "^3.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-reactions": "randomdipesh/react-reactions",
+    "react-redux": "^7.1.0",
+    "react-router-config": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-react-16-adapter-setup": "^0.1.0",
+    "eslint": "5.3.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "2.18.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.14.2",
+    "react-test-renderer": "^16.8.6",
+    "redux-mock-store": "^1.5.3"
   }
 }

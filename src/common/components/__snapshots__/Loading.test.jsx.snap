@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loading /> renders correctly 1`] = `
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "makeStyles-loadingWrapper-2",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {
+          "class": "MuiCircularProgress-root makeStyles-progress-1 MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate",
+          "role": "progressbar",
+          "style": "width:40px;height:40px",
+        },
+        "children": Array [
+          Object {
+            "attribs": Object {
+              "class": "MuiCircularProgress-svg",
+              "viewBox": "22 22 44 44",
+            },
+            "children": Array [
+              Object {
+                "attribs": Object {
+                  "class": "MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate",
+                  "cx": "44",
+                  "cy": "44",
+                  "fill": "none",
+                  "r": "20.2",
+                  "stroke-width": "3.6",
+                },
+                "children": Array [],
+                "name": "circle",
+                "namespace": "http://www.w3.org/2000/svg",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "cx": undefined,
+                  "cy": undefined,
+                  "fill": undefined,
+                  "r": undefined,
+                  "stroke-width": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "cx": undefined,
+                  "cy": undefined,
+                  "fill": undefined,
+                  "r": undefined,
+                  "stroke-width": undefined,
+                },
+              },
+            ],
+            "name": "svg",
+            "namespace": "http://www.w3.org/2000/svg",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "viewBox": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "viewBox": undefined,
+            },
+          },
+        ],
+        "name": "div",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+          "role": undefined,
+          "style": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+          "role": undefined,
+          "style": undefined,
+        },
+      },
+    ],
+    "name": "div",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
+}
+`;
