@@ -24,7 +24,6 @@ Install it and run (development):
 
 ```bash
 yarn install
-mkdir build
 yarn start
 ```
 
