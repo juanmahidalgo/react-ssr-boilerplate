@@ -15,7 +15,7 @@ const NewsContainer = ({ match: { params: { category } } }) => {
   const { headlines, isFetching, error } = useSelector(state => state.news);
 
   useEffect(() => {
-    dispatch(getHeadlines({ category}));
+    dispatch(getHeadlines({ category }));
   }, [category]);
 
   if (isFetching) {
@@ -23,7 +23,7 @@ const NewsContainer = ({ match: { params: { category } } }) => {
   }
 
   return (
-    error 
+    error
       ? <Error message={`Error while fetching news for ${category}`} />
       : (
         <Fragment>

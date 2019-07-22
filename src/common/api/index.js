@@ -8,8 +8,9 @@ export const fetchCategories = () =>
 
 export const fetchHeadlines = async (params = {}) => {
   try {
-    // const response = await axios.get('/api/headlines', { params, crossDomain: true });
-    const response = await fetch('/api/headlines', { params }).then(res => res.json());
+    const base = '/api/headlines';
+    const url = params.category ? `${base}?category=${params.category}` : base;
+    const response = await fetch(url).then(res => res.json());
 
     return {
       headlines: response.data

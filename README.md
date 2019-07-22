@@ -2,7 +2,7 @@
 
 [See it in action]( https://challenge.juanma06.now.sh)
 
-An App that shows a News (Razzle+React+Redux).
+An App that shows news (Razzle+React+Redux).
 
 A [Razzle ♥](https://github.com/jaredpalmer/razzle) based project.
 
