@@ -53,7 +53,7 @@ Razzle uses _Dotenv_ configuration, the easyest way is to create a `.env.local` 
 ```bash
 cat .env.local
 RAZZLE_CONSUMER_KEY=XXXXXXX
-RAZZLE_COUNTRY_KEY=XXXXXX
+RAZZLE_COUNTRY_KEY=us
 ```
 
 ### Docker
