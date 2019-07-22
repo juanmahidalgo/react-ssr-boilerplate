@@ -21,8 +21,7 @@
     "env": {
       "RAZZLE_CONSUMER_KEY": "@razzle-consumer-key",
       "RAZZLE_COUNTRY_KEY": "@razzle-country-key"
-    },
-    "type": "npm"
+    }
   },
   "dependencies": {
     "@material-ui/core": "^4.2.0",

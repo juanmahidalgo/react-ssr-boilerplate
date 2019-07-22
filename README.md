@@ -1,12 +1,12 @@
 # News app
 
-[See it in action]( https://challenge.juanma06.now.sh)
+[See it in action](https://react-news.juanma06.now.sh)
 
 An App that shows news (Razzle+React+Redux).
 
 A [Razzle ♥](https://github.com/jaredpalmer/razzle) based project.
 
-(Some) Packages / Libraries used:
+Some Packages / Libraries used:
 
 * [Razzle](https://github.com/jaredpalmer/razzle): [MIT License](https://github.com/jaredpalmer/razzle/blob/master/LICENSE)
 * [React](https://github.com/facebook/react): [BSD License](https://github.com/facebook/react/blob/master/LICENSE)

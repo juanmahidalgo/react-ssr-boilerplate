@@ -5,7 +5,7 @@ import {
   FINISHED_FETCH_HEADLINES,
 } from '../actions/news';
 
-export default (state = {}, action) => {
+export default (state = { isFetching: true }, action) => {
   switch (action.type) {
     case FETCH_HEADLINES:
       return { ...state, isFetching: true };
