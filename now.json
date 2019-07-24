@@ -15,6 +15,7 @@
       { "src": "/assets.json", "dest": "build/assets.json" },
       { "src": "/favicon.ico", "dest": "build/public/favicon.ico" },
       { "src": "/sw.js", "dest": "build/public/sw.js" },
+      { "src": "/manifest.js", "dest": "build/public/manifest.json" },
       { "src": "/robots.txt", "dest": "build/public/robots.txt" },
       { "src": "/static/(.*)", "dest": "build/public/static/$1" },
       { "src": "/(.*)", "dest": "build/server.js" }    
