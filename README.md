@@ -49,10 +49,9 @@ Environment variables:
 * `RAZZLE_CONSUMER_KEY`: News API consumer Key
 * `RAZZLE_COUNTRY_KEY`: News API country key (e.g 'us')
 
-Razzle uses _Dotenv_ configuration, the easyest way is to create a `.env.local` file on the root directory:
+Razzle uses _Dotenv_ configuration, the easyest way is to create a `.env.local` file on the root directory like this:
 
 ```bash
-cat .env.local
 RAZZLE_CONSUMER_KEY=XXXXXXX
 RAZZLE_COUNTRY_KEY=us
 ```
