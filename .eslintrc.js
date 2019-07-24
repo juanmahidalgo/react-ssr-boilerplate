@@ -13,5 +13,12 @@ module.exports = {
   },
   env: {
     jest: true
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js','.jsx']
+      }
+    },
   }
 };

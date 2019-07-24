@@ -10,12 +10,16 @@ import { getCategories } from '../actions/categories';
 import Category from '../components/Category';
 import Loading from '../components/Loading';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(theme => ({
   categoryWrapper: {
     margin: '2rem',
     display: 'flex',
-    alignItems: 'center',
     flexDirection: 'column',
+    [theme.breakpoints.down('xs')]: {
+      flexWrap: 'wrap',
+      flexDirection: 'row', 
+    },
+    
   }
 }));
 

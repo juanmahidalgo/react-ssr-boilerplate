@@ -3,12 +3,10 @@ function serviceWorker(options = {}) {
     const OfflinePluginRuntime = require('offline-plugin/runtime');
 
     const defaultOptions = {
-      ServiceWorker: {
-        entry: './sw.js'
-      },
       caches: 'all',
 
       onUpdating: () => undefined,
+      onInstalled: () => console.log('Service worker installed'),
       // When an update is ready we will tell the new SW to take control immediately.
       onUpdateReady: () => OfflinePluginRuntime.applyUpdate(),
       // After the new SW update has been applied we will reload the users page
@@ -20,7 +18,6 @@ function serviceWorker(options = {}) {
 
     OfflinePluginRuntime.install(Object.assign({}, defaultOptions, options));
   }
-  console.log('service worker installed');
 }
 
 module.exports = serviceWorker;

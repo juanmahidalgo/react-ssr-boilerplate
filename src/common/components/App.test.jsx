@@ -10,7 +10,7 @@ describe('<App />', () => {
     const div = document.createElement('div');
     ReactDOM.render(
       <MemoryRouter>
-        <App />
+        <App routes={[]} />
       </MemoryRouter>,
       div
     );

@@ -1,4 +1,4 @@
-var OfflinePlugin = require('offline-plugin');
+const OfflinePlugin = require('offline-plugin');
 
 module.exports = {
   modify(config, env, webpack, options) {
@@ -7,7 +7,6 @@ module.exports = {
 
     if (target === 'web' && !dev) {
       // client production only
-      console.log('Adding service worker');
 
       const defaultOptions = {
         excludes: ['**/*.map'],
@@ -22,7 +21,7 @@ module.exports = {
 
       appConfig.plugins = [
         ...appConfig.plugins,
-        new OfflinePlugin(Object.assign({}, defaultOptions, options))
+        new OfflinePlugin(Object.assign({}, defaultOptions, options)),
       ];
     }
 

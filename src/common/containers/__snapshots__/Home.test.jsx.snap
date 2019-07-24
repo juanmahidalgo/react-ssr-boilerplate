@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> renders correctly 1`] = `
+Array [
+  <div
+    className="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-card-1 MuiPaper-rounded"
+  >
+    <div
+      className="MuiCardMedia-root makeStyles-media-2"
+      style={
+        Object {
+          "backgroundImage": "url(\\"test\\")",
+        }
+      }
+      title="News image"
+    />
+    <div
+      className="MuiCardContent-root"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
+      >
+        test
+         - 
+        Invalid Date
+      </p>
+      <h2
+        className="MuiTypography-root MuiTypography-h5"
+      >
+        <a
+          href="test"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          test
+        </a>
+      </h2>
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+      >
+        test
+      </p>
+    </div>
+    <div
+      className="MuiCardActions-root MuiCardActions-spacing"
+    >
+      <div>
+        <div
+          className="makeStyles-counter-5"
+        />
+      </div>
+      <button
+        aria-describedby={null}
+        aria-expanded={false}
+        aria-label="Show more"
+        className="MuiButtonBase-root MuiIconButton-root makeStyles-expand-3"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        title="Read More"
+        type="button"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>,
+  <div
+    className="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-card-1 MuiPaper-rounded"
+  >
+    <div
+      className="MuiCardMedia-root makeStyles-media-2"
+      style={
+        Object {
+          "backgroundImage": "url(\\"test\\")",
+        }
+      }
+      title="News image"
+    />
+    <div
+      className="MuiCardContent-root"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
+      >
+        test
+         - 
+        Invalid Date
+      </p>
+      <h2
+        className="MuiTypography-root MuiTypography-h5"
+      >
+        <a
+          href="test"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          test
+        </a>
+      </h2>
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+      >
+        test
+      </p>
+    </div>
+    <div
+      className="MuiCardActions-root MuiCardActions-spacing"
+    >
+      <div>
+        <div
+          className="makeStyles-counter-5"
+        />
+      </div>
+      <button
+        aria-describedby={null}
+        aria-expanded={false}
+        aria-label="Show more"
+        className="MuiButtonBase-root MuiIconButton-root makeStyles-expand-3"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        title="Read More"
+        type="button"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>,
+]
+`;

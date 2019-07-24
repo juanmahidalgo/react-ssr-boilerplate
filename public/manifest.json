@@ -1,0 +1,27 @@
+{
+  "short_name": "NewsApp",
+  "name": "News app",
+  "description": "An app to read news made with React",
+  "icons": [
+    {
+      "src": "/images/newspaper.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/images/newspaper192.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/images/newspaper24.png",
+      "type": "image/png",
+      "sizes": "24x42"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#3367D6"
+}

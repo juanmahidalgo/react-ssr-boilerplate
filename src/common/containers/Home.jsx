@@ -4,11 +4,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getHeadlines } from '../actions/news';
 import Headline from '../components/Headline';
 import Loading from '../components/Loading';
+import Error from '../components/Error';
 import withCategories from '../HOCs/withCategories';
 
-const Home = () => {
+export const Home = () => {
   const dispatch = useDispatch();
-  const { headlines, isFetching } = useSelector(state => state.news);
+  const { headlines, isFetching, error } = useSelector(state => state.news);
   const fetchHeadlines = useCallback(
     () => dispatch(getHeadlines()),
     [dispatch],
@@ -33,12 +34,14 @@ const Home = () => {
   return (
     <Fragment>
       {
-        headlines &&
-        headlines.map(
-          (headline, index) => (
-            <Headline key={index} headline={headline} />
-          )
-        )
+        error
+          ? <Error message={'Error while fetching news'} />
+          : headlines &&
+              headlines.map(
+                (headline, index) => (
+                  <Headline key={index} headline={headline} />
+                )
+              )
       }
     </Fragment>
   );

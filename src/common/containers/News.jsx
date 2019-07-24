@@ -10,7 +10,7 @@ import Loading from '../components/Loading';
 import Error from '../components/Error';
 import withCategories from '../HOCs/withCategories';
 
-const NewsContainer = ({ match: { params: { category } } }) => {
+export const News = ({ match: { params: { category } } }) => {
   const dispatch = useDispatch();
   const { headlines, isFetching, error } = useSelector(state => state.news);
 
@@ -39,7 +39,7 @@ const NewsContainer = ({ match: { params: { category } } }) => {
   );
 }
 
-NewsContainer.propTypes = {
+News.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.object.isRequired,
   })
@@ -48,4 +48,4 @@ NewsContainer.propTypes = {
 export default compose(
   withCategories,
   withRouter,
-)(NewsContainer)
+)(News)

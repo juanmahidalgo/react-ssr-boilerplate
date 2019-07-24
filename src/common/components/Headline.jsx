@@ -17,8 +17,11 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles(theme => ({
   card: {
-    width: '50%',
-    margin: '25px auto',
+    width: '90%',
+    margin: '2rem auto',
+    [theme.breakpoints.down('xs')]: {
+      width: '90%',
+    },
   },
   media: {
     height: 0,
@@ -59,6 +62,7 @@ const Headline = ({ headline }) => {
   const [expanded, setExpanded] = useState(false);
 
   const onSelect = (emoji) => {
+    // this should make a POST request to the API and persist the reaction somewhere
     setReactions([...reactions, { by: 'You', emoji }]);
     setReaction(emoji);
   }

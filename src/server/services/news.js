@@ -1,13 +1,20 @@
 import axios from 'axios';
-import { apiURL, success } from '../../utils';
+import { apiURL } from '../../utils';
 
-const fetchHeadlines = async (req, res) => {
+const fetchHeadlines = (params = {}) => {
   try {
-    const response = await axios.get(`${apiURL}/top-headlines`, { params: req.query || {} });
-    return success(res, response.data.articles);
+    return axios.get(`${apiURL}/top-headlines`, { params });
   } catch (error) {
     console.error(error);
   }
 };
+// const fetchHeadlines = async (req, res) => {
+//   try {
+//     const response = await axios.get(`${apiURL}/top-headlines`, { params: req.query || {} });
+//     return success(res, response.data.articles);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// };
 
 export { fetchHeadlines };

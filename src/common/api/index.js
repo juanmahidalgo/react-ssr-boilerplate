@@ -1,3 +1,5 @@
+/* global fetch */
+
 // Simulates the fetch to the categories metadata endpoint
 export const fetchCategories = () =>
   Promise.resolve(
@@ -11,11 +13,10 @@ export const fetchHeadlines = async (params = {}) => {
     const base = '/api/headlines';
     const url = params.category ? `${base}?category=${params.category}` : base;
     const response = await fetch(url).then(res => res.json());
-
     return {
       headlines: response.data
     };
   } catch (error) {
-    console.error(error);
+    throw error;
   }
 }

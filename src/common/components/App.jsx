@@ -30,6 +30,10 @@ const useStyles = makeStyles(theme => ({
   mainWrapper: {
     display: 'flex',
     flexDirection: 'column',
+  },
+  link: {
+    color: 'white',
+    textDecoration: 'none',
   }
 }));
 

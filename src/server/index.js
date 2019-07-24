@@ -4,6 +4,7 @@ import express from 'express';
 import { renderToString } from 'react-dom/server';
 import { Provider } from 'react-redux';
 import { ThemeProvider, ServerStyleSheets } from '@material-ui/styles';
+import compression from 'compression';
 
 import './interceptors';
 import theme from '../theme';
@@ -14,10 +15,11 @@ import configureStore from '../common/store/configureStore';
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 const sheets = new ServerStyleSheets();
-
 const server = express();
+
 server
   .disable('x-powered-by')
+  .use(compression())
   .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
   .use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -52,8 +54,6 @@ server
     Promise.all(promises)
       .then(data => {
         const context = {};
-
-        // Pass our routes and data array to our App component
         const markup = renderToString(
           sheets.collect(
             <Provider store={store}>
@@ -79,6 +79,8 @@ server
               <meta charSet='utf-8' />
               <title>React Challenge</title>
               <meta name="viewport" content="width=device-width, initial-scale=1">
+              <link rel="apple-touch-icon" sizes="192x192" href="/images/newspaper192.png" type="image/png">
+              <link rel="manifest" href="/manifest.json">
               <style id="jss-server-side">${css}</style>
               ${assets.client.css
               ? `<link rel="stylesheet" href="${assets.client.css}">`

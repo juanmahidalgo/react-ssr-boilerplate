@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import Categories from '../containers/Categories';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(theme => ({
   newsContainer: {
     height: '90vh',
     overflowY: 'scroll',
@@ -11,6 +11,10 @@ const useStyles = makeStyles(() => ({
   },
   mainWrapper: {
     display: 'flex',
+    [theme.breakpoints.down('xs')]: {
+      flexDirection:'column',
+    },
+
   },
 }));
 

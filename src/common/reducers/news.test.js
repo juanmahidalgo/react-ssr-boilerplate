@@ -8,7 +8,7 @@ import {
 
 describe('news - reducers', () => {
   it('should return the initial state', () => {
-    expect(reducer(undefined, {})).toEqual({});
+    expect(reducer(undefined, {})).toEqual({ isFetching: true });
   });
 
   it('should handle FETCH_HEADLINES', () => {
