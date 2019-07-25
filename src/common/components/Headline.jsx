@@ -17,7 +17,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles(theme => ({
   card: {
-    width: '90%',
+    width: '60%',
     margin: '2rem auto',
     [theme.breakpoints.down('xs')]: {
       width: '90%',
